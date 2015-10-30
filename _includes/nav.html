@@ -1,0 +1,19 @@
+<div id="nav-wrapper">
+	<!-- Nav -->
+	<nav id="nav">
+		<ul>
+			{% assign current = page.url | downcase | split: '/' %}
+			<li {% if current[1] == 'index.html' %}class='current'{% endif %}><a href="/index.html">Homepage</a></li>
+			<li {% if current[1] == 'members.html' %}class='current'{% endif %}><a href="/members.html">People</a></li>
+			<li {% if current[1] == 'left-sidebar.html' %}class='current'{% endif %}><a href="/research/">Research</a></li>
+			<li {% if current[1] == 'right-sidebar.html' %}class='current'{% endif %}><a href="/software">Software</a></li>
+			<li {% if current[1] == 'no-sidebar.html' %}class='current'{% endif %}><a href="/seminars">Seminars</a></li>
+			<li><a href="/publications/">Publications</a></li>
+			<li><a href="/books/">Books</a></li>
+			<li><a href="/internships/">Positions</a></li>
+			<li><a href="/teaching/">Teaching</a></li>
+			<li><a href="/intranet/">Intranet</a></li>
+
+		</ul>
+	</nav>
+</div>
