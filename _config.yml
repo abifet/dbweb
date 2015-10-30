@@ -1,3 +1,4 @@
 name: DBWeb
 description: Database management and the World Wide Web
+baseurl:/dbweb
 paginate: 10
